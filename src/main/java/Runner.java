@@ -16,7 +16,7 @@ public class Runner {
             if (m.isAnnotationPresent(BeforeSuite.class)) before = m;
             else if (m.isAnnotationPresent(AfterSuite.class)) after = m;
             else if (m.getAnnotation(Test.class).priority() < 1 || m.getAnnotation(Test.class).priority() > 10)
-                throw new IllegalArgumentException("Некорректный приоритет в аннотации Test, должено быть от 1 до 10, :а указано " + m.getAnnotation(Test.class).priority() + " у класса  " + m.getName());
+                throw new IllegalArgumentException("Некорректный приоритет в аннотации Test, должно быть от 1 до 10, :а указано " + m.getAnnotation(Test.class).priority() + " у класса  " + m.getName());
             else if (m.isAnnotationPresent(Test.class)) tests.add(m);
         }
         tests.sort(Comparator
