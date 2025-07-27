@@ -1,6 +1,8 @@
-import Annotation.AfterSuite;
-import Annotation.BeforeSuite;
-import Annotation.Test;
+package homework1;
+
+import homework1.Annotation.AfterSuite;
+import homework1.Annotation.BeforeSuite;
+import homework1.Annotation.Test;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
