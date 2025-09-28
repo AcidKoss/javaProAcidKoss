@@ -13,7 +13,7 @@
             <property name="jakarta.persistence.jdbc.password" value="app"/>
 
             <!-- генерация схемы на время демо -->
-            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop"/>
 
             <!-- логирование SQL -->
             <property name="hibernate.show_sql" value="true"/>
